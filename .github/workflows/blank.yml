@@ -1,0 +1,14 @@
+name: Deploy to uat
+on:
+  push:
+    paths:
+      - 'teams.sh'    
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: master
+    - name: deploy to uat
+      run: ./teams-alert.sh 

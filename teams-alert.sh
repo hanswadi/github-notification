@@ -25,8 +25,8 @@ santhosh(){
 
 discussionservice=dev-1.12.0
 
-sudo fluxctl release --k8s-fwd-ns flux -n qa --workload=qa:deployment/discussion-service-qa-tl-ue1-pod --update-image=760361958090.dkr.ecr.us-east-1.amazonaws.com/discussion-service-tl-ue1-ecr:$discussionservice  
-
+echo "sudo fluxctl release --k8s-fwd-ns flux -n qa --workload=qa:deployment/discussion-service-qa-tl-ue1-pod --update-image=760361958090.dkr.ecr.us-east-1.amazonaws.com/discussion-service-tl-ue1-ecr:$discussionservice"  
+ 
 santhosh "sharath-service" $discussionservice
 
 deploymentservice=dev-1.13.0

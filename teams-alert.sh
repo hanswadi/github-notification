@@ -23,17 +23,17 @@ santhosh(){
  fi
 }
 
-discussion-service=v1.00
+discussionservice=v1.00
 
 sudo fluxctl release --k8s-fwd-ns flux -n dev --workload=dev:deployment/discussion-service-dev-tl-ue1-pod --update-image=760361958090.dkr.ecr.$
 
-santhosh "sharath-service" $discussion-service
+santhosh "sharath-service" $discussionservice
 
-deployment-service=v2.00
+deploymentservice=v2.00
 
 sudo fluxctl release --k8s-fwd-ns flux -n dev --workload=dev:deployment/discussion-service-dev-tl-ue1-pod --update-image=760361958090.dkr.ecr.$
 
 
-santhosh "toorak-service" $deployment-service
+santhosh "toorak-service" $deploymentservice
 
 

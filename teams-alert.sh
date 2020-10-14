@@ -33,4 +33,3 @@ sudo fluxctl release --k8s-fwd-ns flux -n dev --workload=dev:deployment/discussi
 
 santhosh "toorak-service" v2.00
 
-#

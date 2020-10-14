@@ -5,7 +5,7 @@ on:
       - 'teams-alert.sh'    
 jobs:
   build:
-    runs-on: [self-hosted,linux]
+    runs-on: ubuntu
     steps:
     - uses: actions/checkout@v1
       with:
